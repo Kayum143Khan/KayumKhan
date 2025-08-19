@@ -1,0 +1,106 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #4e73df;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #222;
+  color: white;
+  padding: 0.8rem 1rem;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-toggle {
+  display: none;
+}
+.menu-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.menu-links a.active,
+.menu-links a:hover {
+  color: #f0db4f;
+  border-bottom: 2px solid #f0db4f;
+}
+
+/* Skills Section */
+.skills-section {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.skills-section h2 {
+  text-align: center;
+  color: #4e73df;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.skills-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.skills-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #aaa;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-links.show {
+    display: flex;
+  }
+}

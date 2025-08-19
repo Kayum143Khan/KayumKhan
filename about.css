@@ -1,0 +1,166 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* ===== Header Navigation ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #2f2f2f;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6600;
+
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #ff9900;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+
+
+.about-section {
+  padding: 3rem 1rem;
+  background: #fff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.about-image img {
+  width: 300px;
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/*education and work section*/
+.edu-work-section {
+  background: #87ceeb;
+  padding: 3rem 1rem;
+  color: #222;
+}
+
+.edu-work-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.education, .work {
+  flex: 1;
+  min-width: 280px;
+}
+
+.education h2, .work h2 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  list-style: disc inside;
+  line-height: 1.8;
+}
+
+ul li {
+  margin-bottom: 1.2rem;
+}
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+  }
+
+  nav {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

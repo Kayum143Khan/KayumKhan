@@ -1,0 +1,183 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #2f2f2f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #ff9900;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+
+/* ===== Contact Hero Section ===== */
+.contact-hero {
+  background-color: #2f2f2f;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ddd;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ===== Contact Form Section ===== */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-intro p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.form-intro strong {
+  color: #ff6600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .main-title {
+    font-size: 34px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: #aaa;
+}

@@ -1,0 +1,135 @@
+/* Base Setup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* ===== Header Navigation ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #2f2f2f;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #ff9900;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* ===== My Projects Grid Section ===== */
+#projects {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-grid .project-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.project-grid .project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-grid .project-card h3 {
+  color: #ff6600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-grid .project-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.project-grid .project-card a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.project-grid .project-card a:hover {
+  background-color: #e65c00;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 600px) {
+  .projects-section h2,
+  .section-title {
+    font-size: 28px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section .project-card,
+  .project-grid .project-card {
+    padding: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: #aaa;
+}
